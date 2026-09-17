@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="noir-theme">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- SEO：核心关键词「大叔日记 / 大叔日记一个爱分享的大叔」 -->
+  <title>大叔日记 - 一个爱分享的大叔！ | DS Diary 个人主页</title>
+  <meta name="description" content="大叔日记（DS Diary）—— 一个爱分享的大叔！记录生活、分享热爱、探索世界。个人主页导航：博客、云页、邮局、笔记、导航、图床、提醒，一站式入口。" />
+  <meta name="keywords" content="大叔日记, 大叔日记一个爱分享的大叔, DS大叔日记, DS Diary, 爱分享的大叔, 个人主页, 个人导航, 个人门户, 博客, 云页" />
+  <meta name="author" content="大叔日记" />
+  <meta name="robots" content="index, follow" />
+  <meta name="application-name" content="大叔日记" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./logo.png" />
+  <link rel="apple-touch-icon" href="./logo.png" />
+
+  <!-- 关键视觉预加载：Logo 是首屏第一张图 -->
+  <link rel="preload" as="image" href="./logo.png" />
+
+  <!-- Open Graph / 社交分享 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="大叔日记" />
+  <meta property="og:url" content="https://dsriji.com/" />
+  <meta property="og:title" content="大叔日记 - 一个爱分享的大叔！" />
+  <meta property="og:description" content="记录生活、分享热爱、探索世界。大叔日记的个人主页：博客、云页、邮局、笔记、导航、图床一站式入口。" />
+  <meta property="og:image" content="./logo.png" />
+  <meta property="og:locale" content="zh_CN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="大叔日记 - 一个爱分享的大叔！" />
+  <meta name="twitter:description" content="记录生活、分享热爱、探索世界。大叔日记的个人主页一站式入口。" />
+  <meta name="twitter:image" content="./logo.png" />
+
+  <!-- 结构化数据：让搜索引擎准确识别「大叔日记」品牌 -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "大叔日记",
+        "alternateName": ["DS Diary", "DS大叔日记"],
+        "url": "https://dsriji.com/",
+        "description": "大叔日记 - 一个爱分享的大叔！记录生活、分享热爱、探索世界的个人主页。"
+      },
+      {
+        "@type": "Person",
+        "name": "大叔日记",
+        "alternateName": "DS Diary",
+        "description": "一个爱分享的大叔！",
+        "knowsAbout": ["记录生活", "分享热爱", "探索世界"]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#000000" />
+  <meta name="msapplication-TileColor" content="#000000" />
+
+  <!-- 首屏底色，避免加载时白闪 -->
+  <style>
+    html, body { margin: 0; background: #040407; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

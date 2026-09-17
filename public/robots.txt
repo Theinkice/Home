@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 大叔日记 - 一个爱分享的大叔！
+Sitemap: https://dsriji.com/sitemap.txt

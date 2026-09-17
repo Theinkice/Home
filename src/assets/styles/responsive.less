@@ -1,0 +1,159 @@
+// ============================================
+//   DS Diary - Responsive (NOIR) 1.0
+//   响应式布局系统
+// ============================================
+
+@import './variables.less';
+
+// ---- 超小屏 (< 375px) ----
+@media (max-width: (@breakpoint-xs - 1)) {
+  :root {
+    --container-padding: 16px;
+    --spacing-unit: 8px;
+  }
+  
+  .main-content {
+    padding: @spacing-md;
+  }
+}
+
+// ---- 小屏手机 (375px - 576px) ----
+@media (min-width: @breakpoint-xs) and (max-width: (@breakpoint-sm - 1)) {
+  :root {
+    --container-padding: 20px;
+  }
+}
+
+// ---- 大屏手机/小平板 (576px - 768px) ----
+@media (min-width: @breakpoint-sm) and (max-width: (@breakpoint-md - 1)) {
+  .main-content {
+    max-width: 90%;
+  }
+}
+
+// ---- 平板 (768px - 992px) ----
+@media (min-width: @breakpoint-md) and (max-width: (@breakpoint-lg - 1)) {
+  .main-content {
+    max-width: 85%;
+  }
+  
+  // 禁用自定义光标（触摸设备）
+  .custom-cursor {
+    display: none;
+  }
+  
+  .app.cursor-enabled {
+    cursor: auto;
+    
+    a, button, [role="button"] {
+      cursor: pointer;
+    }
+  }
+}
+
+// ---- 桌面端 (> 992px) ----
+@media (min-width: @breakpoint-lg) {
+  .main-content {
+    max-width: @container-max-width;
+  }
+}
+
+// ---- 大桌面端 (> 1200px) ----
+@media (min-width: @breakpoint-xl) {
+  :root {
+    --container-padding: 48px;
+  }
+  
+  .title-ds {
+    font-size: 96px !important;
+  }
+  
+  .logo-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .logo-image {
+    width: 110px;
+    height: 110px;
+  }
+}
+
+// ---- 触摸设备优化 ----
+@media (hover: none) and (pointer: coarse) {
+  // 隐藏自定义光标
+  .custom-cursor {
+    display: none !important;
+  }
+  
+  // 移除 hover 效果，改为 active 效果
+  .nav-link:hover {
+    transform: none;
+    border-color: @color-border;
+    background: @color-bg-card;
+  }
+  
+  .nav-link:active {
+    transform: scale(0.98);
+    background: rgba(0, 212, 255, 0.08);
+  }
+  
+  // 增大点击区域
+  .nav-link,
+  .play-btn {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+// ---- 高分辨率屏幕 ----
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logo-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+// ---- 横屏模式 ----
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    padding: @spacing-md 0;
+  }
+  
+  .hero-logo {
+    margin-bottom: @spacing-md;
+  }
+  
+  .hero-divider {
+    margin: @spacing-md 0;
+  }
+  
+  .scroll-hint {
+    display: none;
+  }
+  
+  .music-player {
+    bottom: 12px;
+  }
+}
+
+// ---- 打印样式 ----
+@media print {
+  .particle-background,
+  .custom-cursor,
+  .music-player,
+  .scroll-hint {
+    display: none !important;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  * {
+    color: black !important;
+    border-color: #ccc !important;
+  }
+}
