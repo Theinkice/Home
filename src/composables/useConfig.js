@@ -34,13 +34,13 @@ const defaultConfig = {
   },
   navigation: {
     items: [
-      { name: '云页', url: 'https://web.dsriji.com/', icon: 'cloud', target: '_blank' },
-      { name: '博客', url: 'http://blog.dsriji.com/', icon: 'blog', target: '_blank' },
-      { name: '邮局', url: 'https://webmail.dsriji.com/', icon: 'mail', target: '_blank' },
-      { name: '笔记', url: 'https://log.dsriji.com/', icon: 'note', target: '_blank' },
       { name: '导航', url: 'https://nav.dsriji.com/', icon: 'nav', target: '_blank' },
+      { name: '博客', url: 'http://blog.dsriji.com/', icon: 'blog', target: '_blank' },
+      { name: '云页', url: 'https://web.dsriji.com/', icon: 'cloud', target: '_blank' },
       { name: '图床', url: 'https://img.dsriji.com/', icon: 'image', target: '_blank' },
-      { name: '提醒', url: 'https://sub.dsriji.com/', icon: 'bell', target: '_blank' }
+      { name: '笔记', url: 'https://log.dsriji.com/', icon: 'note', target: '_blank' },
+      { name: '提醒', url: 'https://sub.dsriji.com/', icon: 'bell', target: '_blank' },
+      { name: '监控', url: 'https://vps.dsriji.com/', icon: 'monitor', target: '_blank' }
     ]
   },
   music: {

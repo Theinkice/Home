@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "大叔日记 - 一个爱分享的大叔！ | DS Diary 个人主页",
-    "description": "大叔日记（DS Diary）—— 一个爱分享的大叔！记录生活、分享热爱、探索世界。个人主页导航：博客、云页、邮局、笔记、导航、图床、提醒，一站式入口。",
+    "description": "大叔日记（DS Diary）—— 一个爱分享的大叔！记录生活、分享热爱、探索世界。个人主页导航：导航、博客、云页、图床、笔记、提醒、监控，一站式入口。",
     "favicon": "/logo.png"
   },
   "background": {
@@ -33,13 +33,13 @@
   },
   "navigation": {
     "items": [
-      { "name": "云页", "url": "https://web.dsriji.com/", "icon": "cloud", "target": "_blank" },
-      { "name": "博客", "url": "http://blog.dsriji.com/", "icon": "blog", "target": "_blank" },
-      { "name": "邮局", "url": "https://webmail.dsriji.com/", "icon": "mail", "target": "_blank" },
-      { "name": "笔记", "url": "https://log.dsriji.com/", "icon": "note", "target": "_blank" },
       { "name": "导航", "url": "https://nav.dsriji.com/", "icon": "nav", "target": "_blank" },
+      { "name": "博客", "url": "http://blog.dsriji.com/", "icon": "blog", "target": "_blank" },
+      { "name": "云页", "url": "https://web.dsriji.com/", "icon": "cloud", "target": "_blank" },
       { "name": "图床", "url": "https://img.dsriji.com/", "icon": "image", "target": "_blank" },
-      { "name": "提醒", "url": "https://sub.dsriji.com/", "icon": "bell", "target": "_blank" }
+      { "name": "笔记", "url": "https://log.dsriji.com/", "icon": "note", "target": "_blank" },
+      { "name": "提醒", "url": "https://sub.dsriji.com/", "icon": "bell", "target": "_blank" },
+      { "name": "监控", "url": "https://vps.dsriji.com/", "icon": "monitor", "target": "_blank" }
     ]
   },
   "music": {
