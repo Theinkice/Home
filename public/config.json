@@ -39,7 +39,7 @@
       { "name": "图床", "url": "https://img.dsriji.com/", "icon": "image", "target": "_blank" },
       { "name": "笔记", "url": "https://log.dsriji.com/", "icon": "note", "target": "_blank" },
       { "name": "提醒", "url": "https://sub.dsriji.com/", "icon": "bell", "target": "_blank" },
-      { "name": "监控", "url": "https://vps.dsriji.com/", "icon": "monitor", "target": "_blank" }
+      { "name": "监控", "url": "https://ping.dsriji.com/", "icon": "monitor", "target": "_blank" }
     ]
   },
   "music": {
